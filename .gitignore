@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+静态页面与组件
 
 
 # local env files
