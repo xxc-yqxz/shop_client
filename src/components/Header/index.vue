@@ -80,6 +80,17 @@ export default {
           });
       }
 
+      /* 
+      router.push(location, onComplete?, onAbort?)
+      router.push(location).then(onComplete).catch(onAbort)
+      */
+      /*
+     // 解决重复跳转路由的错误:（重复跳转回返回一个失败的Promise）
+     // 方法一：传入成功的回调函数。使得其不会返回一个Promise对象
+     // console.log(this.$router.push(location,()=>{}))
+     // 方法二：catch处理错误的promise
+     // console.log(this.$router.push(location)).catch(()=>{})
+     */
       this.$router.push(location);
     },
   },
